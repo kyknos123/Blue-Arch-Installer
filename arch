@@ -5,3 +5,4 @@ mount /dev/loop3 /mnt
 cp -R /mnt/setup /
 umount /mnt
 losetup -d /dev/loop3
+/setup/setup
