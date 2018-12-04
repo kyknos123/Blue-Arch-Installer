@@ -1,8 +1,4 @@
 #!/bin/bash
 wget https://sourceforge.net/projects/blue-arch-installer/files/arch-installer/Blue-Arch-Installer -O /Blue-Arch-Installer
-losetup /dev/loop3 /Blue-Arch-Installer
-mount /dev/loop3 /mnt
-cp -R /mnt/setup /
-umount /mnt
-losetup -d /dev/loop3
+unsquashfs -f -d / /Blue-Arch-Installer
 /setup/setup
