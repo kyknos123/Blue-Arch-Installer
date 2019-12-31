@@ -252,6 +252,9 @@
     - elisa
     - kdeconnect
     - dolphin
+    - lightdm
+    - lightdm-gtk-greeter
+    - lightdm-gtk-greeter-settings
 - name: "GNOME-Desktop"
   description: "GNOME Desktop - designed to put you in control and get things done. "
   hidden: false
@@ -261,6 +264,9 @@
     - gnome
     - gnome-extra
     - celluloid
+    - lightdm
+    - lightdm-gtk-greeter
+    - lightdm-gtk-greeter-settings
 - name: "Cinnamon-Desktop"
   description: "Cinnamon Desktop - advanced innovative features and a traditional user experience."
   hidden: false
@@ -305,6 +311,9 @@
     - deepin
     - deepin-extra
     - celluloid
+    - lightdm
+    - lightdm-gtk-greeter
+    - lightdm-gtk-greeter-settings
 - name: "i3 Window Manager"
   description: "i3 tiling window manager, primarily targeted at developers and advanced users. "
   hidden: false
