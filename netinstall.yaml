@@ -24,6 +24,7 @@
     - xf86-video-intel
     - xf86-video-vesa
     - xf86-input-evdev
+    - mesa-demos
     - xorg-xkill
     - xdg-user-dirs
     - xdg-user-dirs-gtk
@@ -381,3 +382,43 @@
     - firefox
     - chromium
     - opera
+- name: "Nvidia Video Closed Source Drivers"
+  description: "Put your nvidia video driver"
+  hidden: false
+  selected: false
+  critical: false
+  packages:
+      - nvidia-dkms
+      - nvidia-prime
+      - nvidia-settings
+      - nvidia-utils
+- name: "Nvidia Video Open Source Drivers"
+  description: "Put your open source nvidia drivers"
+  hidden: false
+  selected: false
+  critical: false
+  packages:
+      - mesa
+      - lib32-mesa
+- name: "Amd Video Open Source Drivers"
+  description: "Put your amd drivers"
+  hidden: false
+  selected: false
+  critical: false
+  packages:
+      - lib32-mesa
+      - vulkan-radeon
+      - lib32-vulkan-radeon
+      - vulkan-icd-loader
+      - lib32-vulkan-icd-loader
+- name: "Intel Video Open Source Drivers"
+  description: "Put your intel drivers"
+  hidden: false
+  selected: false
+  critical: false
+  packages:
+      - lib32-mesa
+      - vulkan-intel
+      - lib32-vulkan-intel
+      - vulkan-icd-loader
+      - lib32-vulkan-icd-loader
