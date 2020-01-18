@@ -15,13 +15,9 @@
     - xorg-apps
     - xorg-twm
     - xorg-xclock
-    - xf86-video-nouveau
     - xf86-input-libinput
     - xf86-input-synaptics
-    - xf86-video-amdgpu
-    - xf86-video-ati
     - xf86-video-fbdev
-    - xf86-video-intel
     - xf86-video-vesa
     - xf86-input-evdev
     - mesa-demos
@@ -382,16 +378,6 @@
     - firefox
     - chromium
     - opera
-- name: "Nvidia Video Closed Source Drivers"
-  description: "Put your nvidia video driver"
-  hidden: false
-  selected: false
-  critical: false
-  packages:
-      - nvidia-dkms
-      - nvidia-prime
-      - nvidia-settings
-      - nvidia-utils
 - name: "Nvidia Video Open Source Drivers"
   description: "Put your open source nvidia drivers"
   hidden: false
@@ -400,6 +386,7 @@
   packages:
       - mesa
       - lib32-mesa
+      - xf86-video-nouveau
 - name: "Amd Video Open Source Drivers"
   description: "Put your amd drivers"
   hidden: false
@@ -407,6 +394,8 @@
   critical: false
   packages:
       - lib32-mesa
+      - xf86-video-ati
+      - xf86-video-amdgpu
       - vulkan-radeon
       - lib32-vulkan-radeon
       - vulkan-icd-loader
@@ -418,6 +407,7 @@
   critical: false
   packages:
       - lib32-mesa
+      - xf86-video-intel
       - vulkan-intel
       - lib32-vulkan-intel
       - vulkan-icd-loader
