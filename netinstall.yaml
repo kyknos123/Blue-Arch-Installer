@@ -193,40 +193,69 @@
     - pv
     - unrar
     - unzip
-- name: "Nvidia Video Open Source Drivers"
-  description: "Put your open source nvidia drivers"
+- name: "GeForce GTX 400+ Drivers"
+  description: "Put your nvidia drivers"
+  hidden: false
+  selected: false
+  critical: false
+  packages:
+      - nvidia
+      - nvidia-utils
+      - libva-vdpau-driver
+- name: "GeForce GTX 300 Drivers"
+  description: "Put your nvidia drivers"
+  hidden: false
+  selected: false
+  critical: false
+  packages:
+      - nvidia-390xx
+      - nvidia-390xx-utils
+      - libva-vdpau-driver
+- name: "GeForce 8000 Drivers"
+  description: "Put your nvidia drivers"
   hidden: false
   selected: false
   critical: false
   packages:
       - mesa
-      - lib32-mesa
       - xf86-video-nouveau
-- name: "Amd Video Open Source Drivers"
+- name: "Hybrid Graphics Manager"
+  description: "Graphic manager nvidia/intel"
+  hidden: false
+  selected: false
+  critical: false
+  packages:
+      - nvidia-prime
+- name: "Amd Video AMD Radeon R9 285, R9 380(X), R9 Fury (X), R9 Nano, RX 400+ Drivers"
   description: "Put your amd drivers"
   hidden: false
   selected: false
   critical: false
   packages:
-      - lib32-mesa
+      - mesa
+      - mesa-vdpau
+      - libva-mesa-driver
+      - vulkan-radeon
+- name: "Any Other AMD/ATI Drivers"
+  description: "Put your amd drivers"
+  hidden: false
+  selected: false
+  critical: false
+  packages:
+      - mesa
       - xf86-video-ati
       - xf86-video-amdgpu
-      - vulkan-radeon
-      - lib32-vulkan-radeon
-      - vulkan-icd-loader
-      - lib32-vulkan-icd-loader
-- name: "Intel Video Open Source Drivers"
+      - mesa-vdpau
+      - libva-mesa-driver
+- name: "Intel Video Drivers"
   description: "Put your intel drivers"
   hidden: false
   selected: false
   critical: false
   packages:
-      - lib32-mesa
-      - xf86-video-intel
+      - libvdpau-va-gl
+      - libva-intel-driver
       - vulkan-intel
-      - lib32-vulkan-intel
-      - vulkan-icd-loader
-      - lib32-vulkan-icd-loader
 - name: "Accessibility Tools"
   description: "Screen reader and mouse tweak"
   hidden: false
