@@ -6,7 +6,6 @@
   packages:
     - base-devel
     - linux-headers
-    - linux-firmware
     - pacman-contrib
     - xf86-video-vesa
     - xorg
