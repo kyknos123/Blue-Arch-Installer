@@ -201,15 +201,6 @@
       - nvidia
       - nvidia-utils
       - libva-vdpau-driver
-- name: "GeForce GTX 300 Drivers"
-  description: "Put your nvidia drivers"
-  hidden: false
-  selected: false
-  critical: false
-  packages:
-      - nvidia-390xx
-      - nvidia-390xx-utils
-      - libva-vdpau-driver
 - name: "GeForce 8000 Drivers"
   description: "Put your nvidia drivers"
   hidden: false
