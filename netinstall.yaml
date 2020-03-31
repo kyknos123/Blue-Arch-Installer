@@ -184,6 +184,7 @@
     - vala
     - meson
     - ninja
+    - flatpak
     - gobject-introspection
     - squashfs-tools
     - crypto++
