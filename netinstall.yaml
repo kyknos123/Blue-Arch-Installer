@@ -274,6 +274,7 @@
     - xfce4-systemload-plugin
     - xfce4-taskmanager
     - xfce4-xkb-plugin
+    - catfish
     - lightdm
     - lightdm-gtk-greeter
     - lightdm-gtk-greeter-settings
