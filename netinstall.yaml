@@ -164,7 +164,6 @@
     - crda
     - ddrescue
     - exfat-utils
-    - f2fs-tools
     - gpart
     - gparted
     - android-tools
