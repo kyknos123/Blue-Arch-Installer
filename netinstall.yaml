@@ -192,6 +192,7 @@
     - pv
     - unrar
     - unzip
+    - asciidoc
 - name: "GeForce GTX 400+ Drivers"
   description: "Put your nvidia drivers"
   hidden: false
