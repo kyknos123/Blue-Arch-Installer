@@ -202,6 +202,7 @@
       - nvidia
       - nvidia-utils
       - libva-vdpau-driver
+      - nvidia-settings
 - name: "GeForce 8000 Drivers"
   description: "Put your nvidia drivers"
   hidden: false
