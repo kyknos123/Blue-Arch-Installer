@@ -193,6 +193,8 @@
     - unrar
     - unzip
     - asciidoc
+    - libhandy
+    - lxsession
 - name: "GeForce GTX 400+ Drivers"
   description: "Put your nvidia drivers"
   hidden: false
