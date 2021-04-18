@@ -195,7 +195,7 @@
     - asciidoc
     - libhandy
     - lxsession
-- name: "GeForce GTX 400+ Drivers"
+- name: "GeForce GTX-RTX closed drivers"
   description: "Put your nvidia drivers"
   hidden: false
   selected: false
@@ -205,7 +205,7 @@
       - nvidia-utils
       - libva-vdpau-driver
       - nvidia-settings
-- name: "GeForce 8000 Drivers"
+- name: "GeForce open driver"
   description: "Put your nvidia drivers"
   hidden: false
   selected: false
